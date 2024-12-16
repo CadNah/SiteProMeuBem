@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Sevillana&display=swap" rel="stylesheet">
+    <title> te amo :3 </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #card {
+            cursor: pointer;
+        }
+        #text {
+            display: none;
+            color: white;
+            font-family: 'Lovers Quarrel', cursive; /* Aplicando Lovers Quarrel */
+            font-size: 1.5em;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img id="card" src="carta1.png" alt="Carta" width="200">
+    <div id="text">
+        oiiii meu amor!!!!
+
+        Se você está lendo isso, então quer dizer que é dia 16 de Dezembro! ou seja... faltam 7 dias pro seu aniversario amor!!!!!!!!!! 
+        E nessa semana, por uma ideia sua, eu planejei fazer algumas coisinhas especiais para esse dia tão especial pra mim ♥. Você é a pessoa mais especial para mim em todo o mundo!!! e eu quero retribuir todo o amor que eu sinto contigo por meio de coisinhas q fiz pra tiiiii! ♥♥♥♥
+        É muito dificil escolher uma coisinha para cada dia, pois tenho medo de decepcionar vc, mas saiba que eu fiz com muito muito muito muito muitoooo carinho pra vc.
+        
+
+    </div>
+
+    <script>
+        const card = document.getElementById('card');
+        const text = document.getElementById('text');
+
+        card.addEventListener('click', () => {
+            card.src = "carta2.png"; // Substituir pelo segundo PNG
+            setTimeout(() => {
+                card.style.display = "none";
+                text.style.display = "block";
+            }, 500); // Meio segundo para dar o efeito de troca
+        });
+    </script>
+</body>
+</html>
